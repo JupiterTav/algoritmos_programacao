@@ -16,6 +16,8 @@ entre estes dois pontos.*/
     imprima distancia
 */
 
+float distancia(float x1, float y1, float x2, float y2);
+
 int main() {
 
   float x1, y1;
@@ -31,9 +33,11 @@ int main() {
   printf("Digite y2: ");
   scanf("%f", &y2);
 
-  float distancia = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-
-  printf("A distância é: %f\n", distancia);
+  printf("A distância é: %f\n", distancia(x1, y1, x2, y2));
 
   return 0;
+}
+
+float distancia(float x1, float y1, float x2, float y2) {
+  return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 }
