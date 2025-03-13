@@ -5,12 +5,21 @@ entre estes dois pontos.*/
 #include <math.h>
 #include <stdio.h>
 
+/*
+    DISTANCIA_2PONTOS
+
+    leia (x1, y1) //elementos do par ordenado primeiro
+    leia (x2, y2) //elementos do par ordenado segundo
+
+    distancia <- ((x2-x1)²+(y2-y1)²)½
+
+    imprima distancia
+*/
+
 int main() {
 
   float x1, y1;
   float x2, y2;
-
-  float distancia;
 
   printf("Digite x1: ");
   scanf("%f", &x1);
@@ -22,7 +31,7 @@ int main() {
   printf("Digite y2: ");
   scanf("%f", &y2);
 
-  distancia = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+  float distancia = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 
   printf("A distância é: %f\n", distancia);
 
