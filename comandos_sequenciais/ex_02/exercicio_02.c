@@ -2,12 +2,31 @@
 em dólares. O programa deverá ler o preço e a taxa de conversão para o dólar.*/
 
 /*
-    ler (preço)
-    ler (taxaConversão)
+    ler (valorReal)
+    ler (taxaConversãoDolar)
 
-    preçoDolar <- conversão(preço, taxa)
+    valorConvertido <- conversão(valorReal, taxa)
 
-    imprimir preçoDolar
+    imprimir valorConvertido
 */
 
-int main() { return 0; }
+#include <stdio.h>
+int main() {
+
+  float valor;
+  float taxaConversaoDolar;
+  float valorConvertido;
+
+  printf("Insira o valor (em real): ");
+  scanf("%f", &valor);
+
+  printf("Por favor, informe a cotação do dolar: ");
+  scanf("%f", &taxaConversaoDolar);
+
+  valorConvertido = (valor * taxaConversaoDolar);
+
+  printf("Valor em real: %.2f; Valor da cotação: %.2f; Valor em dolar: %.2f\n",
+         valor, taxaConversaoDolar, valorConvertido);
+
+  return 0;
+}
