@@ -7,24 +7,24 @@ entre estes dois pontos.*/
 
 int main() {
 
-  int x1, y1;
-  int x2, y2;
+  float x1, y1;
+  float x2, y2;
 
-  int distancia;
+  float distancia;
 
   printf("Digite x1: ");
-  scanf("%d", &x1);
+  scanf("%f", &x1);
   printf("Digite y1: ");
-  scanf("%d", &y1);
+  scanf("%f", &y1);
 
   printf("Digite x2: ");
-  scanf("%d", &x2);
+  scanf("%f", &x2);
   printf("Digite y2: ");
-  scanf("%d", &y2);
+  scanf("%f", &y2);
 
   distancia = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 
-  printf("A distância é: %d\n", distancia);
+  printf("A distância é: %f\n", distancia);
 
   return 0;
 }
